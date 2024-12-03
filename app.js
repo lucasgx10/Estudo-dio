@@ -1,0 +1,16 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+const CompanyAccount_1 = require("./class/CompanyAccount");
+const PeopleAccount_1 = require("./class/PeopleAccount");
+const businessAccount_1 = require("./class/businessAccount");
+const peopleAccount = new PeopleAccount_1.PeopleAccount(1, 'Nath', 10);
+peopleAccount.deposit(100);
+console.log(peopleAccount);
+const companyAccount = new CompanyAccount_1.CompanyAccount('DIO', 20);
+companyAccount.deposit(100);
+companyAccount.withdraw(10);
+companyAccount.getLoan(100);
+console.log(companyAccount);
+const businessAccount = new businessAccount_1.BusinessAccount('empresa', 600);
+businessAccount.deposit(100);
+console.log(businessAccount);
